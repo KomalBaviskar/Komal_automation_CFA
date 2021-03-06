@@ -2,6 +2,7 @@ package testScript;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import configuration.Configuration;
@@ -33,5 +34,22 @@ WebDriver dr;
 		
 	}
 	
+	@Test(priority=6)
+	public void SelectIsintheLastOptionFromDateRange()
+	{
+		dr.findElement(By.xpath("//span[text()='is in the last 7 days']")).click();
+		dr.findElement(By.xpath("//span[@class='InlineInputText__InlineInputTextBase-sc-1nk1o3l-2 AIRam']")).click();
+		dr.findElement(By.xpath("//span[text()='is in the last']")).click();
+		
+		
+	}
+	
+	@Test(dependsOnMethods={"SelectIsintheLastOptionFromDateRange"})
+	public void SelectNoOfDaysFromDateRange()
+	{
+		WebElement NoOfDays= dr.findElement(By.xpath("//div[@class='InputText-sc-6cvg1f-2 chZDbU sc-jgHCyG dUNqSA']"));
+		NoOfDays.clear();
+		NoOfDays.sendKeys("10");
+	}
 
 }
