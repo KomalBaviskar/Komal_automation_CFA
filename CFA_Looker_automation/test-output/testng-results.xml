@@ -2,50 +2,50 @@
 <testng-results skipped="0" failed="1" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="129489" started-at="2021-03-06T13:22:04Z" finished-at="2021-03-06T13:24:14Z">
+  <suite name="Default suite" duration-ms="220162" started-at="2021-03-06T14:02:45Z" finished-at="2021-03-06T14:06:25Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="129489" started-at="2021-03-06T13:22:04Z" finished-at="2021-03-06T13:24:14Z">
+    <test name="Default test" duration-ms="220162" started-at="2021-03-06T14:02:45Z" finished-at="2021-03-06T14:06:25Z">
       <class name="testScript.CallLogLookerReport">
-        <test-method status="PASS" signature="test1()[pri:1, instance:testScript.CallLogLookerReport@1c7cbad]" name="test1" duration-ms="104277" started-at="2021-03-06T18:52:04Z" finished-at="2021-03-06T18:53:48Z">
+        <test-method status="PASS" signature="test1()[pri:1, instance:testScript.CallLogLookerReport@1c7cbad]" name="test1" duration-ms="191260" started-at="2021-03-06T19:32:45Z" finished-at="2021-03-06T19:35:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="CFAlogin()[pri:2, instance:testScript.CallLogLookerReport@1c7cbad]" name="CFAlogin" duration-ms="4002" started-at="2021-03-06T18:53:48Z" finished-at="2021-03-06T18:53:52Z">
+        <test-method status="PASS" signature="CFAlogin()[pri:2, instance:testScript.CallLogLookerReport@1c7cbad]" name="CFAlogin" duration-ms="4781" started-at="2021-03-06T19:35:56Z" finished-at="2021-03-06T19:36:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CFAlogin -->
-        <test-method status="PASS" signature="NavigateToReportsPage()[pri:3, instance:testScript.CallLogLookerReport@1c7cbad]" name="NavigateToReportsPage" duration-ms="4068" started-at="2021-03-06T18:53:52Z" finished-at="2021-03-06T18:53:57Z">
+        <test-method status="PASS" signature="NavigateToReportsPage()[pri:3, instance:testScript.CallLogLookerReport@1c7cbad]" name="NavigateToReportsPage" duration-ms="4178" started-at="2021-03-06T19:36:01Z" finished-at="2021-03-06T19:36:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NavigateToReportsPage -->
-        <test-method status="PASS" signature="SelectCallLogsReportFromSelectAReportList()[pri:4, instance:testScript.CallLogLookerReport@1c7cbad]" name="SelectCallLogsReportFromSelectAReportList" duration-ms="3599" started-at="2021-03-06T18:53:57Z" finished-at="2021-03-06T18:54:00Z">
+        <test-method status="PASS" signature="SelectCallLogsReportFromSelectAReportList()[pri:4, instance:testScript.CallLogLookerReport@1c7cbad]" name="SelectCallLogsReportFromSelectAReportList" duration-ms="5441" started-at="2021-03-06T19:36:05Z" finished-at="2021-03-06T19:36:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SelectCallLogsReportFromSelectAReportList -->
-        <test-method status="FAIL" signature="ClickOnDateRangeButton()[pri:5, instance:testScript.CallLogLookerReport@1c7cbad]" name="ClickOnDateRangeButton" duration-ms="13361" started-at="2021-03-06T18:54:00Z" finished-at="2021-03-06T18:54:14Z">
+        <test-method status="FAIL" signature="ClickOnDateRangeButton()[pri:5, instance:testScript.CallLogLookerReport@1c7cbad]" name="ClickOnDateRangeButton" duration-ms="14336" started-at="2021-03-06T19:36:10Z" finished-at="2021-03-06T19:36:25Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'Hover')]"}
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='is in the last 7 days']"}
   (Session info: chrome=89.0.4389.82)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'DESKTOP-OFSQJKE', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_131'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58637}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 60a5c6e833796477f536cbf260b23e0d
-*** Element info: {Using=xpath, value=//div[contains(@class,'Hover')]}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60875}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bb47825553fe3b04b592d001c7563a52
+*** Element info: {Using=xpath, value=//span[text()='is in the last 7 days']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'Hover')]"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='is in the last 7 days']"}
   (Session info: chrome=89.0.4389.82)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
 System info: host: 'DESKTOP-OFSQJKE', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_131'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58637}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 60a5c6e833796477f536cbf260b23e0d
-*** Element info: {Using=xpath, value=//div[contains(@class,'Hover')]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.82, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:60875}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bb47825553fe3b04b592d001c7563a52
+*** Element info: {Using=xpath, value=//span[text()='is in the last 7 days']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -60,7 +60,7 @@ Session ID: 60a5c6e833796477f536cbf260b23e0d
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at testScript.CallLogLookerReport.ClickOnDateRangeButton(CallLogLookerReport.java:59)
+	at testScript.CallLogLookerReport.ClickOnDateRangeButton(CallLogLookerReport.java:56)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
