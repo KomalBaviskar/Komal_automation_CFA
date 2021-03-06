@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="231517" started-at="2021-03-06T10:54:01Z" finished-at="2021-03-06T10:57:53Z">
+  <suite name="Default suite" duration-ms="76936" started-at="2021-03-06T19:49:22 IST" finished-at="2021-03-06T19:50:39 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="231517" started-at="2021-03-06T10:54:01Z" finished-at="2021-03-06T10:57:53Z">
+    <test name="Default test" duration-ms="76936" started-at="2021-03-06T19:49:22 IST" finished-at="2021-03-06T19:50:39 IST">
       <class name="testScript.CallLogLookerReport">
-        <test-method status="PASS" signature="test1()[pri:1, instance:testScript.CallLogLookerReport@1c7cbad]" name="test1" duration-ms="227252" started-at="2021-03-06T16:24:01Z" finished-at="2021-03-06T16:27:48Z">
+        <test-method status="PASS" signature="test1()[pri:1, instance:testScript.CallLogLookerReport@3dd4520b]" name="test1" duration-ms="71339" started-at="2021-03-06T19:49:22 IST" finished-at="2021-03-06T19:50:33 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1 -->
-        <test-method status="PASS" signature="CFAlogin()[pri:2, instance:testScript.CallLogLookerReport@1c7cbad]" name="CFAlogin" duration-ms="4131" started-at="2021-03-06T16:27:49Z" finished-at="2021-03-06T16:27:53Z">
+        <test-method status="PASS" signature="CFAlogin()[pri:2, instance:testScript.CallLogLookerReport@3dd4520b]" name="CFAlogin" duration-ms="5262" started-at="2021-03-06T19:50:34 IST" finished-at="2021-03-06T19:50:39 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CFAlogin -->
