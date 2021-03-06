@@ -5,8 +5,7 @@
     <classes>
       <class name="testScript.CallLogLookerReport">
         <methods>
-          <include name="CFAlogin"/>
-          <include name="test1"/>
+          <include name="ClickOnDateRangeButton"/>
         </methods>
       </class> <!-- testScript.CallLogLookerReport -->
     </classes>
