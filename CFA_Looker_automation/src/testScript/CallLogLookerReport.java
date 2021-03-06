@@ -56,22 +56,22 @@ WebDriver dr;
 		NoOfDays.clear();
 		NoOfDays.sendKeys("10");
 	}
-	
 	//samiksha
-	@Test(dependsOnMethods= {"SelectNoOfDaysFromDateRange"})
-	public void selectPeriod()
-	{
-		dr.findElement(By.xpath("//input[@id='listbox-a03b0069-bca4-48ba-849c-48a15316ea02']")).click();
-		dr.findElement(By.xpath("//span[text()='weeks']")).click();
-	}
-	
-	//samiksha
-	@Test(dependsOnMethods= {"selectPeriod"})
-	public void fetchResults()
-	{
-		dr.findElement(By.xpath("//button[@class='ButtonBase__ButtonOuter-sc-1bpio6j-0 fhghIn ButtonBase-sc-1bpio6j-1 itHerX IconButton-n9jti8-1 sc-iIEYCM kZtxfb jJFvHt']")).click();
-		dr.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-	}
+		@Test(dependsOnMethods= {"SelectNoOfDaysFromDateRange"})
+		public void selectPeriod()
+		{
+			dr.findElement(By.xpath("//input[@id='listbox-a03b0069-bca4-48ba-849c-48a15316ea02']")).click();
+			dr.findElement(By.xpath("//span[text()='weeks']")).click();
+		}
+		
+		//samiksha
+		@Test(dependsOnMethods= {"selectPeriod"})
+		public void fetchResults()
+		{
+			dr.findElement(By.xpath("//button[@class='ButtonBase__ButtonOuter-sc-1bpio6j-0 fhghIn ButtonBase-sc-1bpio6j-1 itHerX IconButton-n9jti8-1 sc-iIEYCM kZtxfb jJFvHt']")).click();
+			dr.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		}
+		
 	
 
 }
