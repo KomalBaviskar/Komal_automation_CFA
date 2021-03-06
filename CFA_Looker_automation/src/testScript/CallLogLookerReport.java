@@ -21,6 +21,7 @@ WebDriver dr;
 		
 	}
 	
+	//Komal
 	@Test(priority=2)
 	public void CFAlogin() throws InterruptedException
 	{
@@ -34,6 +35,7 @@ WebDriver dr;
 		
 	}
 	
+	//Komal
 	@Test(priority=6)
 	public void SelectIsintheLastOptionFromDateRange()
 	{
@@ -44,6 +46,7 @@ WebDriver dr;
 		
 	}
 	
+	//Komal
 	@Test(dependsOnMethods={"SelectIsintheLastOptionFromDateRange"})
 	public void SelectNoOfDaysFromDateRange()
 	{
