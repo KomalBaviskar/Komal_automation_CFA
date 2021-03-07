@@ -5,8 +5,12 @@
     <classes>
       <class name="testScript.CallLogLookerReport">
         <methods>
-          <include name="CFAlogin"/>
-          <include name="test1"/>
+          <include name="fetchResults"/>
+          <include name="NavigateToReportsPage"/>
+          <include name="SelectIsintheLastOptionFromDateRange"/>
+          <include name="SelectCallLogsReportFromSelectAReportList"/>
+          <include name="SelectNoOfDaysFromDateRange"/>
+          <include name="selectPeriod"/>
         </methods>
       </class> <!-- testScript.CallLogLookerReport -->
     </classes>

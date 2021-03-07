@@ -5,6 +5,8 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 import configuration.Configuration;
@@ -27,14 +29,48 @@ WebDriver dr;
 	@Test(priority=2)
 	public void CFAlogin() throws InterruptedException
 	{
-		Thread.sleep(3000);
+		Thread.sleep(4000);
 		dr.findElement(By.id("email")).sendKeys("snehal.d@moentek.com");
 		
 		dr.findElement(By.id("password")).sendKeys("lmc2demo");
 		
 		dr.findElement(By.id("b1")).click();
 		
+	}
+	
+
+	//Rushabh
+	@Test(priority=3)
+	public void NavigateToReportsPage() throws InterruptedException {
 		
+	//	WebDriverWait wait1 = new WebDriverWait(dr, 40);
+	//	WebElement element1 = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='sidebar']/li[2]/a/i")));
+		//element1.click();
+		Thread.sleep(6000);
+		dr.findElement(By.xpath("//*[@id='sidebar']/li[2]/a/i")).click();
+
+		}
+	
+	//Rushabh
+	@Test(priority=4)
+	public void SelectCallLogsReportFromSelectAReportList() throws InterruptedException{
+		//Select Call Logs Report From Select A Report List
+		Thread.sleep(4000);
+		dr.findElement(By.xpath("//span[@class='select2-arrow']")).click();
+		dr.findElement(By.xpath("//input[@id='s2id_autogen1_search']")).click();
+		dr.findElement(By.xpath("//input[@id='s2id_autogen1_search']")).sendKeys("call logs");
+		dr.findElement(By.xpath("//span[@class='select2-match']")).click();
+		
+	}
+	
+	//Rushabh
+	//@Test(dependsOnMethods= {"SelectCallLogsReportFromSelectAReportList"})
+     @Test(priority=5)
+	public void ClickOnDateRangeButton() throws InterruptedException{
+		//click on date range button
+	     Thread.sleep(4000);
+	     dr.findElement(By.xpath("//span[text()='is in the last 7 days']")).click();
+       
 	}
 	
 	//Komal
@@ -56,6 +92,7 @@ WebDriver dr;
 		NoOfDays.clear();
 		NoOfDays.sendKeys("10");
 	}
+//<<<<<<< HEAD
 	//samiksha
 		@Test(dependsOnMethods= {"SelectNoOfDaysFromDateRange"})
 		public void selectPeriod()
@@ -71,7 +108,10 @@ WebDriver dr;
 			dr.findElement(By.xpath("//button[@class='ButtonBase__ButtonOuter-sc-1bpio6j-0 fhghIn ButtonBase-sc-1bpio6j-1 itHerX IconButton-n9jti8-1 sc-iIEYCM kZtxfb jJFvHt']")).click();
 			dr.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		}
-		
-	
-
 }
+	
+//=======
+//branch 'master' of https://github.com/KomalBaviskar/Komal_automation_CFA.git
+//>>>>>>> branch 'master' of https://github.com/KomalBaviskar/Komal_automation_CFA.git
+
+
