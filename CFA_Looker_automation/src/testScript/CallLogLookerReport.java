@@ -42,10 +42,7 @@ WebDriver dr;
 	//Rushabh
 	@Test(priority=3)
 	public void NavigateToReportsPage() throws InterruptedException {
-		
-	//	WebDriverWait wait1 = new WebDriverWait(dr, 40);
-	//	WebElement element1 = wait1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id='sidebar']/li[2]/a/i")));
-		//element1.click();
+	
 		Thread.sleep(6000);
 		dr.findElement(By.xpath("//*[@id='sidebar']/li[2]/a/i")).click();
 
@@ -65,18 +62,24 @@ WebDriver dr;
 	
 	//Rushabh
 	//@Test(dependsOnMethods= {"SelectCallLogsReportFromSelectAReportList"})
-     @Test(priority=5)
+    /* @Test(priority=5)
 	public void ClickOnDateRangeButton() throws InterruptedException{
 		//click on date range button
 	     Thread.sleep(4000);
 	     dr.findElement(By.xpath("//span[text()='is in the last 7 days']")).click();
        
-	}
+	}*/
 	
 	//Komal
-	@Test(priority=6)
-	public void SelectIsintheLastOptionFromDateRange()
+	@Test(priority=5)
+	public void SelectIsintheLastOptionFromDateRange() throws InterruptedException
 	{
+		// Thread.sleep(4000);
+	//ad source	// dr.findElement(By.xpath("//div[@class='sc-ehSCib gWslmI'][4]/div/span")).click();
+		// WebDriverWait wait = new WebDriverWait(dr, 40);
+		// wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[text()='is in the last 7 days']"))).click();
+		dr.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		System.out.println(dr.findElement(By.xpath("//h1[text()='Call Logs - Enhanced']")).getText());
 		dr.findElement(By.xpath("//span[text()='is in the last 7 days']")).click();
 		dr.findElement(By.xpath("//span[@class='InlineInputText__InlineInputTextBase-sc-1nk1o3l-2 AIRam']")).click();
 		dr.findElement(By.xpath("//span[text()='is in the last']")).click();

@@ -6,9 +6,7 @@
       <class name="testScript.CallLogLookerReport">
         <methods>
           <include name="fetchResults"/>
-          <include name="NavigateToReportsPage"/>
           <include name="SelectIsintheLastOptionFromDateRange"/>
-          <include name="SelectCallLogsReportFromSelectAReportList"/>
           <include name="SelectNoOfDaysFromDateRange"/>
           <include name="selectPeriod"/>
         </methods>
